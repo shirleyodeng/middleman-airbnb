@@ -1,11 +1,10 @@
 .cards {
-  background-color: #FFFFFF;
+  background-color: $white;
   padding: 80px 50px;
-}
-
-.cards h2 {
-  font-size: 30px;
-  padding-bottom: 15px;
+  h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
 }
 
 .card {
@@ -13,7 +12,7 @@
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
-  color: white;
+  color: $white;
   position: relative;
 }
 
@@ -37,20 +36,17 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-}
-
-.card-description h2 {
-  font-size: 22px;
-  padding-bottom: 5px;
-}
-
-.card-description p {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-.card-description .rating {
-  opacity: 1;
+  h2 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  .rating {
+    opacity: 1;
+  }
 }
 
 .card-link {
@@ -62,9 +58,7 @@
   z-index: 2;
   background: black;
   opacity: 0;
+  &:hover {
+    opacity: 0.1;
+  }
 }
-
-.card-link:hover {
-  opacity: 0.1;
-}
-
